@@ -1,0 +1,186 @@
+/* Hoja de estilos principal para stratokaster.com
+ * Autor: Ricardo Urdín
+ * Fecha: 14 Junio de 2014
+ *
+ * Características: 
+ * 
+ *
+ * Dimensiones: 
+ *        anchura máxima body: 990px
+ *        slideshow: 700px x 300px
+ *        imagenes articulos: 200px x 100px
+ */
+ 
+ /* ---------  Reseteo del estilo por defecto -------------- */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+font: bold 20px verdana, sans-serif;
+}
+
+header, section, footer, aside, nav, article, figure, figcaption, hgroup {
+display: block;
+}
+
+/* ---------- reglas generales del body ------------------------ */
+body {
+   max-width: 990px;
+   margin: 0px auto;
+   padding: 0px 20px;
+   text-align: left;  
+   font-family: arial, verdana, sans-serif;   /* fuente texto  */
+   overflow: auto;
+   
+   /* borrar */
+   background: white;
+   border: 1px solid #999999;
+}
+
+/* ------  Borrar
+fondos y tamaños de los cuadros para visualizar la maquetacion ------------*/
+header {
+background: red;
+border: 0px solid #999999;
+}
+
+nav {
+background: green;
+border: 0px solid #999999;
+}
+section {
+background: yellow;
+border: 0px solid #999999;
+padding:0px;
+}
+
+article {
+background: purple;
+border: 0px solid #999999;
+}
+
+footer {
+
+}
+
+/* -------  estructura del slideshow y div a su derecha -----------*/
+
+article.slideshow {
+   border: none;
+   background: #ff0;
+   overflow: hidden;
+   height: 1%;   
+   
+   /* borrar */
+   padding:0px;
+   border: 0px solid #999999;
+}
+div#slideshow {
+   border: none;
+   background: #0f0;
+   width: 70%; /* 700px aprox */
+   /*height: 300px; /* borrar, ya que la altura la dan las imagenes */
+   float: left;
+}
+div#datos {
+   border: none;
+   background: #080;
+   width: 30%; 
+   /*height: 200px; /* borrar, ya que la altura la dan los datos */
+   float: left;
+}
+/* ------- Reglas para el contenido del div slideshow  ----------------------*/
+div#slideshow img {
+   border: none;
+   width: 100%;
+   height: 100%;
+
+}
+/* -------  estructura de los articulos. Una imagen izda y texto dcha  -------*/
+article.contenidosPrincipales {
+   overflow: hidden;
+   height: 1%;
+   margin-top: 10px;
+   
+   /*borrar*/
+   padding: 0px;
+   
+   
+}
+
+div.imgagenArticulo {
+   float: left;
+   overflow: hidden;
+   margin: 0px 20px 0px 20px;
+   
+   /*borrar
+   background: #0ff;
+   width: 200px;
+   height: 110px;*/
+
+}
+
+div.textoArticulo {
+   
+   /*borrar*/
+   background: #0080f0;	  
+
+
+}
+
+/* ------------------------   reglas footer  --------------------------- */
+footer {
+   padding: 20px 0px;
+   text-align: center;
+   border-top: 2px solid #999999;
+   
+
+   /*borrar*/
+   background: cyan;
+}
+
+/* -------------------------  Menú superior  ---------------- */
+/* reglas generales de posicionamiento y estilo*/
+#menuSuperior li {
+   display: inline-block;
+   list-style: none;
+   padding: 5px 70px; /* dapendera del numero de items */
+   font: bold 14px verdana, sans-serif;
+}
+/* No visitados */
+#menuSuperior a:link {
+   text-decoration: none;
+}
+/* Visitados */
+#menuSuperior a:visited{
+   text-decoration: none;
+}
+/* Over */
+#menuSuperior a:over {
+   text-decoration: none;
+}
+/* Active */
+#menuSuperior a:active{
+   text-decoration: none;
+}
+
+/* efectos especiales
+#menuSuperior li:hover {
+   background: -webkit-radial-gradient(center, ellipse, #f00 30%, #00f 70%);
+   background: -moz-radial-gradient(center, ellipse, #f00 30%, #00f 70%);
+}
+
+#menuSuperior li:active {
+   background: -webkit-radial-gradient(center, ellipse, #f0f 0%, #00f 70%);
+   background: -moz-radial-gradient(center, ellipse, #f0f 0%, #00f 70%);
+}
+
+
+/* ------------  efectos para las imagenes de los articulos  ----------------
+img.articulo:hover{
+   -moz-box-shadow: rgb(175,175,175) -10px -10px;
+   -webkit-box-shadow: rgb(175,175,175) -10px -10px;
+   box-shadow: #f00 0px 0px 20px;
+}
