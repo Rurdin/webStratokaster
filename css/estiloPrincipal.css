@@ -18,7 +18,7 @@
 }
 
 h1 {
-font: bold 20px verdana, sans-serif;
+font: bold 30px verdana, sans-serif;
 }
 
 header, section, footer, aside, nav, article, figure, figcaption, hgroup {
@@ -27,20 +27,25 @@ display: block;
 
 /* ---------- reglas generales del body ------------------------ */
 body {
+   
    max-width: 990px;
    margin: 0px auto;
-   padding: 0px 20px;
+   /*padding: 0px 20px;*/
    text-align: left;  
    font-family: arial, verdana, sans-serif;   /* fuente texto  */
+   color: white;
    overflow: auto;
-   background-image: url(./images/css/fondoNegro1x1680.png);
+   background-color: black;
+   background-image: url("../images/cssImages/fondoNegro1024para990.png");
+   background-repeat: repeat-y;
+   background-position: center;
    /* borrar */
 
-   border: 1px solid #999999;
+
 }
 
 /* ------  Borrar
-fondos y tamaños de los cuadros para visualizar la maquetacion ------------*/
+fondos y tamaños de los cuadros para visualizar la maquetacion ------------
 header {
 background: red;
 border: 0px solid #999999;
@@ -51,44 +56,28 @@ background: green;
 border: 0px solid #999999;
 }
 section {
-background: yellow;
+
 border: 0px solid #999999;
 padding:0px;
 }
 
 article {
-background: purple;
+
 border: 0px solid #999999;
-}
-
-footer {
-
-}
-
+}*/
 /* -------  estructura del slideshow y div a su derecha -----------*/
 
 article.slideshow {
-   border: none;
-   background: #ff0;
+   margin: 0px auto;
+   padding: 0px 20px;
    overflow: hidden;
-   height: 1%;   
-   
-   /* borrar */
-   padding:0px;
-   border: 0px solid #999999;
 }
 div#slideshow {
-   border: none;
-   background: #0f0;
    width: 70%; /* 700px aprox */
-   /*height: 300px; /* borrar, ya que la altura la dan las imagenes */
    float: left;
 }
 div#datos {
-   border: none;
-   background: #080;
    width: 30%; 
-   /*height: 200px; /* borrar, ya que la altura la dan los datos */
    float: left;
 }
 /* ------- Reglas para el contenido del div slideshow  ----------------------*/
@@ -96,38 +85,22 @@ div#slideshow img {
    border: none;
    width: 100%;
    height: 100%;
-
 }
 /* -------  estructura de los articulos. Una imagen izda y texto dcha  -------*/
 article.contenidosPrincipales {
    overflow: hidden;
    height: 1%;
    margin-top: 10px;
-   
-   /*borrar*/
-   padding: 0px;
-   
-   
 }
 
 div.imgagenArticulo {
    float: left;
    overflow: hidden;
    margin: 0px 20px 0px 20px;
-   
-   /*borrar
-   background: #0ff;
-   width: 200px;
-   height: 110px;*/
-
 }
 
 div.textoArticulo {
    
-   /*borrar*/
-   background: #0080f0;	  
-
-
 }
 
 /* ------------------------   reglas footer  --------------------------- */
@@ -136,9 +109,18 @@ footer {
    text-align: center;
    border-top: 2px solid #999999;
    
-
    /*borrar*/
    background: cyan;
+}
+/* ------------------------- reglas header ------------------*/
+header {
+text-align: left;
+padding: 0px 20px;
+border: 0px solid #999999;
+}
+
+#comentarioTitulo {
+font-size: 10px;
 }
 
 /* -------------------------  Menú superior  ---------------- */
