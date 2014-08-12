@@ -33,9 +33,9 @@ body {
    text-align: left;  
    font-family: arial, verdana, sans-serif;   /* fuente texto  */
    overflow: auto;
-   
+   background-image: url(./images/css/fondoNegro1x1680.png);
    /* borrar */
-   background: white;
+
    border: 1px solid #999999;
 }
 
