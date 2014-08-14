@@ -27,60 +27,73 @@ display: block;
 
 /* ---------- reglas generales del body ------------------------ */
 body {
-   
    max-width: 990px;
    margin: 0px auto;
-   /*padding: 0px 20px;*/
    text-align: left;  
    font-family: arial, verdana, sans-serif;   /* fuente texto  */
    color: white;
    overflow: auto;
    background-color: black;
-   background-image: url("../images/cssImages/fondoNegro1024para990.png");
+   background-image: url("../images/cssImages/fondoNegro1024para990_01.png");
    background-repeat: repeat-y;
    background-position: center;
-   /* borrar */
-
-
 }
-
-/* ------  Borrar
-fondos y tamaños de los cuadros para visualizar la maquetacion ------------
+/* ------------------------- reglas header ------------------*/
 header {
-background: red;
+text-align: left;
+padding: 0px 20px;
 border: 0px solid #999999;
 }
 
-nav {
-background: green;
-border: 0px solid #999999;
+#comentarioTitulo { /* keywords para seo */
+font-size: 10px;
 }
+/* ----------------------- reglas section ------------------- */
 section {
-
-border: 0px solid #999999;
-padding:0px;
+padding: 0px 20px;
+}
+/* -----------------------  reglas footer ------------------- */
+footer {
+   padding: 20px 0px;
+   text-align: center;
+   border-top: 2px solid #999999;
+   
+   /*borrar*/
+   background: cyan;
 }
 
-article {
-
-border: 0px solid #999999;
-}*/
-/* -------  estructura del slideshow y div a su derecha -----------*/
+/* -------  slideshow y divs a su derecha -----------*/
 
 article.slideshow {
    margin: 0px auto;
-   padding: 0px 20px;
    overflow: hidden;
 }
 div#slideshow {
    width: 70%; /* 700px aprox */
    float: left;
 }
-div#datos {
-   width: 30%; 
+div#derechaSlide {
+   width: 30%;  
    float: left;
 }
-/* ------- Reglas para el contenido del div slideshow  ----------------------*/
+#datos {
+   margin: 0px 0px 0px 20px; /* para separar el texto de la imagen */
+   padding: 10px;
+   background-color: #c0c0c0;
+}
+#datos .titulo {
+font: bold 20px arial;
+color: #555;
+}
+p:first-letter {
+font: bold 30px arial;
+color: red;
+}
+#datos .contenido {
+font: bold 16px arial;
+color: #fff;
+}
+/* ------- Reglas para el contenido del div slideshow----------------*/
 div#slideshow img {
    border: none;
    width: 100%;
@@ -96,35 +109,18 @@ article.contenidosPrincipales {
 div.imgagenArticulo {
    float: left;
    overflow: hidden;
-   margin: 0px 20px 0px 20px;
+   margin: 0px 20px 0px 0px; /* para separar el texto de la imagen */
 }
 
 div.textoArticulo {
    
 }
 
-/* ------------------------   reglas footer  --------------------------- */
-footer {
-   padding: 20px 0px;
-   text-align: center;
-   border-top: 2px solid #999999;
-   
-   /*borrar*/
-   background: cyan;
-}
-/* ------------------------- reglas header ------------------*/
-header {
-text-align: left;
-padding: 0px 20px;
-border: 0px solid #999999;
-}
 
-#comentarioTitulo {
-font-size: 10px;
-}
 
-/* -------------------------  Menú superior  ---------------- */
-/* reglas generales de posicionamiento y estilo*/
+
+/* -------------- links ---------------- */
+
 #menuSuperior li {
    display: inline-block;
    list-style: none;
@@ -146,7 +142,7 @@ font-size: 10px;
 /* Active */
 #menuSuperior a:active{
    text-decoration: none;
-}
+} 
 
 /* efectos especiales
 #menuSuperior li:hover {
