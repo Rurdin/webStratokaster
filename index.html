@@ -5,7 +5,7 @@
   <meta name="description" content="Peluquería Stratokaster en Ansoain, Pamplona, con Alicia Gorricho e Irene Marques. Joven, dinámica, moderna, te va ha encantar venir a la pelu">
   <meta name="keywords" content="stratokaster, peluquería, peluqueria,  peluquería Pamplona, peluqueria ansoain,pelu, stilistas, stilistas pamplona, stilistas ansoain, pelo,abril et nature, abril nature, aen,Alicia Gorricho, Irene Marques,  keratina, tratamiento, peinar, cortar">
   <title> Stratokaster. La mejor peluquería de Pamplona</title>
-  <link rel="stylesheet" href="./css/estiloPrincipal.css" />
+  <link rel="stylesheet" type="text/css" href="./css/estiloPrincipal.css" />
 
 </head>
 
@@ -31,41 +31,27 @@
   	<!-- articulo que contiene el slide show-->   
 	<article class="slideshow">
       <!-- esta es la estructura del slideshow -->
-    <div id = "slideshow">
-	   <img src="./images/slideshowImages/slide700x400.jpg" alt="Foto 700 x 400 px">
-      <!--<div id = "slidesContainer">
-        <div class = "slide">
-		  <figure>
-            <img src="./SlideImg/foto1_900x490.jpg" alt="Descripcion de la foto">
-          </figure>  
-        </div>
-        <div class = "slide">
-          <figure>
-            <img src="./SlideImg/foto2_900x490.jpg" alt="Descripcion de la foto">
-          </figure>
-        </div>
-        <div class = "slide">
-         <figure>
-           <img src="./SlideImg/foto3_900x490.jpg" alt="Descripcion de la foto">
-          </figure>
-        </div>
-        <div class = "slide">
-          <figure>
-            <img src="./SlideImg/foto4_900x490.jpg" alt="Descripcion de la foto">
-          </figure>
-        </div>
-		<div class = "slide">
-          <figure>
-            <img src="./SlideImg/foto5_900x490.jpg" alt="Descripcion de la foto">
-          </figure>
-        </div>
-		<div class = "slide">
-          <figure>
-            <img src="./SlideImg/foto6_900x490.jpg" alt="Descripcion de la foto">
-          </figure>
-        </div>
-      </div>-->
-    </div>
+    <div id = "slideshow" class="slider">
+	   <div id="elem1" class="s_element s_visible">
+	      <img src="./images/slideshowImages/slider1_700x400.jpg">
+	   </div>
+	   <div id="elem2" class="s_element">
+	      <img src="./images/slideshowImages/slider2_700x400.jpg">
+	   </div>
+	   
+	   <div id="elem3" class="s_element">
+	      <img src="./images/slideshowImages/slider3_700x400.jpg">
+	   </div>
+	   
+	   <div id="elem4" class="s_element">
+	      <img src="./images/slideshowImages/slider4_700x400.jpg">
+	   </div>
+	   
+	   <div id="elem5" class="s_element">
+	      <img src="./images/slideshowImages/slider5_700x400.jpg">
+	   </div>
+	   
+    </div> 
 	<!--  fin slideshow  -->
 	<div id="derechaSlide">
 	  <div id="datos">
@@ -95,6 +81,7 @@
 	  
 	  </div>
 	 </div>
+	 <!--<div style="clear: both"></div> <!-- para limpiar los float -->
     </article>
 	
 	<!-- articulo  debajo del slideshow -->   
@@ -178,6 +165,13 @@
 	  </a>
 	  
   </footer>
-
+  
+  <!-- ------------ incluimos los scripts al finaldel documento ------------ -->
+  
+  <script type="text/javascript" src="./scripts/jquery-1.11.0.js"></script>
+  <script type="text/javascript" src="./scripts/slider.js"></script>
+	
+  <!-- ---------------------- fin de  los scripts ------------------------  -->	
+  
  </body>
 </html>
